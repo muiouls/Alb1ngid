@@ -4,15 +4,15 @@ class Bank:
         self._balanse = balanse
 
     def moneyX(self):
-        ad = input(f'сколько добавишь к своим {self._balanse} введи сумму: ')
+        ad = input(f'сколько добавите к своим {self._balanse} введите сумму: ')
         print(self._balanse + int(ad))
 
     def _kill(self):
         if self._balanse > 0:
-            print('теперь у тебя все наличкой')
+            print('теперь у вас все наличкой')
             return self._balanse - self._balanse
         else:
-            print('ты и так бомж, на счету нету денег')
+            print('у вас не достаточно средств ')
             return self._balanse
 
     def __jackpot(self):
